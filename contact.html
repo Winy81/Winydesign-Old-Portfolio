@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" media="screen" href="frontpage.css">
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Cs, 19 márc. 2015 19:06:20 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+
+  </head>
+  <body>
+    <header id="header">
+	
+	 <div id="maintitle">
+	 <h1 class="firsth1">Winy Design Gallery</h1>
+	 <h1 class="firsth1sec">Front <span class="and"> & </span> Developer </h1>
+	
+	 </div>
+   <div class="headermenu">
+     <ul class="mainmenu">
+      <a href="index.html" onMouseOver="open_portfolio();" onMouseOut="close_portfolio();"><li class="firstli">Main page</li></a>
+	 <a href="email_temp.html" onMouseOver="open_email_design();" onMouseOut="close_email_design();"><li class="firstli">Email design</li></a>
+	  <a href="#" onMouseOver="open_source_code();" onMouseOut="close_source_code();"><li class="firstli">Site design</li></a>
+      <a href="u_links.html" onMouseOver="open_useful_links();" onMouseOut="close_useful_links();"><li class="firstli">Useful links</li></a>
+	 <a href="about_me.html" onMouseOver="open_about();" onMouseOut="close_about();"><li class="firstli">About Me</li></a>
+	 <a href="contact.html" onMouseOver="open_contact();" onMouseOut="close_contact();"><li class="firstli">Contact</li></a>
+	 
+     </ul>
+  </div>
+  
+	 
+	  
+   </header>
+   <div id="topbar">
+  <div class="menu2">
+ <ul class="menuonthetop">
+ <li class="facebook"><a href="http://facebook.com"><img src="facebook_orange.png" onmouseover="this.src='facebook.png'" onmouseout="this.src='facebook_orange.png'" alt="Facebook" height="20" width="20"></a></li>
+ <li class="linedln"><a href="http://linkedln.com"><img src="linkedn_orange.png" onmouseover="this.src='linkedln.png'" onmouseout="this.src='linkedn_orange.png'" alt="Facebook" height="20" width="20"></a></li>
+ <li class="twitter"><a href="http://twitter.com"><img src="twitter_orange.png" onmouseover="this.src='twitter.png'" onmouseout="this.src='twitter_orange.png'" alt="Facebook" height="20" width="20"></a></li>
+ </ul>
+  </div>
+</div>
+	
+	<article id="content">
+	
+	
+	 <h2>Contact Me</h2></br>
+	 
+	 <div id="space2"></div>
+	 
+	 
+	 <h3>Please answer this short question, you will then recieve the email link.</h3></br>
+	 
+	 <div class="input_li_list">
+	 <p>Question:</p></br>
+	 
+	 <p id="robot_filter"></p>
+	 <li style="list-style-type:none;margin-left:10px"><input type='number' id='text2'/></li> </br>
+	 <p>Now you have answered the question, just press the button to recieve the email link. Enjoy!</p>
+	 
+	 <div id="email_button" onclick="sendmail()">Send</div>
+	 </div></br></br>
+		
+	</article>
+	
+	<footer id="footer">
+		<h4>- Winy © design 2017 -</h4>
+		<h6>Web and email design portfolio page</h6>
+	</footer>
+	
+	
+	
+ <div id="infobox_email">
+  <div id="my_mail_link"><p>Behold the link:</p></br>
+ 	<a href="mailto:nemeth.richo@gmail.com">
+ 	nemeth.richo@gmail.com</a>
+  </div>
+    </div>
+	
+	
+
+
+
+<script language="JavaScript" type="text/javascript">
+	
+var x = Math.floor((Math.random() * 10) + 1);
+var y = Math.floor((Math.random() * 10) + 1);
+var z = x + y;
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+document.getElementById("robot_filter").innerHTML = x +" + "+ y + " = ";
+function sendmail(){
+	var f = document.getElementById("infobox_email");	
+	var	b = document.getElementById("text2").value;
+	/*document.querySelector("#infobox_email").style.display = "block";*/
+	if (z == b){
+		f.style.width = '700px';
+		document.getElementById("footer").style.marginTop = '200px'}
+		else if(z != b){
+			alert("Please try again")
+		}
+		else{
+			alert ("Please follow the steps just prove, you are not a robot")
+		}
+	}
+
+</script>
+	
+</body>

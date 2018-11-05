@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" media="screen" href="frontpage.css">
+    <meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+    <meta name="dcterms.created" content="Cs, 19 márc. 2017 19:06:20 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+
+  </head>
+  <body>
+    <header id="header">
+	
+	 <div id="maintitle">
+	 <h1 class="firsth1">Winy Design Gallery</h1>
+	 <h1 class="firsth1sec">Front <span class="and"> & </span> Developer </h1>
+	
+	 </div>
+      <div class="headermenu">
+        <ul class="mainmenu">
+         <a href="index.html" onMouseOver="open_portfolio();" onMouseOut="close_portfolio();"><li class="firstli">Main page</li></a>
+		 <a href="email_temp.html" onMouseOver="open_email_design();" onMouseOut="close_email_design();"><li class="firstli">Email design</li></a>
+		  <a href="#" onMouseOver="open_source_code();" onMouseOut="close_source_code();"><li class="firstli">Site design</li></a>
+         <a href="u_links.html" onMouseOver="open_useful_links();" onMouseOut="close_useful_links();"><li class="firstli">Useful links</li></a>
+		 <a href="about_me.html" onMouseOver="open_about();" onMouseOut="close_about();"><li class="firstli">About Me</li></a>
+		 <a href="contact.html" onMouseOver="open_contact();" onMouseOut="close_contact();"><li class="firstli">Contact</li></a>
+		 
+        </ul>
+     </div>
+	 
+	 
+	  
+   </header>
+    <div id="topbar">
+	  <div class="menu2">
+   <ul class="menuonthetop">
+   <li class="facebook"><a href="http://facebook.com"><img src="facebook_orange.png" onmouseover="this.src='facebook.png'" onmouseout="this.src='facebook_orange.png'" alt="Facebook" height="20" width="20"></a></li>
+   <li class="linedln"><a href="http://linkedln.com"><img src="linkedn_orange.png" onmouseover="this.src='linkedln.png'" onmouseout="this.src='linkedn_orange.png'" alt="Facebook" height="20" width="20"></a></li>
+   <li class="twitter"><a href="http://twitter.com"><img src="twitter_orange.png" onmouseover="this.src='twitter.png'" onmouseout="this.src='twitter_orange.png'" alt="Facebook" height="20" width="20"></a></li>
+   </ul>
+	  </div>
+	</div>
+	
+	
+	<article id="content">
+	
+	<h2>Useful links</h2>
+	
+	<div id="space2"></div>
+	
+<div id="u_link_contetn_in">
+	<h2>For Front End:</h2></br>
+  <ul class="link_menu">
+	<h3><a href="https://www.w3schools.com/" onMouseOver = "w3c_fun();" onMouseOut="close_w3c_fun();">W3School</a></h3></br>
+	<h3><a href="https://www.w3schools.com/js/default.asp" onMouseOver = "javascript_fun();" onMouseOut="close_javascript_fun();">JavaScript</a></h3></br>
+	<h3><a href="https://jquery.com/" onMouseOver = "jquery_fun();" onMouseOut="close_jquery_fun();">jQuery</a></h3></br>
+	<h3><a href="https://github.com/" onMouseOver = "github_fun();" onMouseOut="close_github_fun();">GitHub</a></h3></br>
+  </ul>
+</br></br></br></br>
+	<h2>For Back End</h2></br></br>
+  <ul class="link_menu">
+	<h3><a href="https://www.mysql.com/" onMouseOver = "mysql_fun();" onMouseOut="close_mysql_fun();">MySql</a></h3></br>
+	<h3><a href="http://rubyonrails.org/" onMouseOver = "rails_fun();" onMouseOut="close_rails_fun();">RoR</a></h3></br>
+	<h3><a href="https://www.asp.net/" onMouseOver = "asp_fun();" onMouseOut="close_asp_fun();">ASP.NET</a></h3></br>
+	<h3><a href="https://www.w3schools.com/php/" onMouseOver = "php_fun();" onMouseOut="close_php_fun();">PHP</a></h3></br>
+  </ul>
+</div>
+
+ <div id="side_article_on_ulinks">
+ 	<h3>Contact Me</h3></br>
+	<p>You can contact me via this site, just follow the link:</p></br>
+	<a href="http://winydesign.com/contact.html">Contact me via the site</a>
+	
+ </div>
+		
+	</article>
+	
+	<footer id="footer">
+		<h4>- Winy © design 2017 -</h4>
+		<h6>Web and email design portfolio page</h6>
+	</footer>
+	
+	<div id="linkbox"><div id="linkboxin"></div></div>
+
+
+<script language="JavaScript" type="text/javascript">
+	
+	var w3c = "Very useful site. Technicaly you can learn everything about front-end and lot of things about back end. You can go through on HTML, CSS, JavaScript, jQuery, mySql, PHP etc. I can't say you will learn everything from this one site, however it can give you a strong basis."
+	var javascript = "The Javascript is your first tool to make your site dynamic. You can build all of your site with it, or you can use it just for extention purposes along with HTML and CSS."
+	var jquery = "Own site of the jQuery. On the W3c site you can learn how to use, but even on this you can check how the library is built and working."
+	var git = "Bit different like the previous one. The Git is a kind of webserver, where you can upload your files. The reason why it is so common, because it can manage the project. Technically more than one people can work on same file in same time and the git will build them together"
+	var sql ="MySql is a type of database. Quiet common, i recommend to use because it has nice compatibilty. PHP-Rails-Webservers can manage without any problems. There are lots of different types on the web as MsSql beside C# PostgreSql what is now used for the new dediceted database on Heroku webserver etc..."
+	var rails ="It is a software framework taht is used to create dynamic sites. It's based on Ruby language. If Somebody never tried to use, you can imagine like .net or somewhere like Wordpress. Ruby language is opensource, it gives you lot of freedom on the job. There are lots of gems on the web and they are like plugins, they can make your job much faster"
+	var asp ="ASP.NET. Same type of framwork like Rails. The main difference is the Rails based on Ruby the ASP.NET on C# language. Microsoft supports the framework which has the same database system as MsSql."
+	var php = "The php is maybe the most common back-end language. You can use it to create your own project from 0, but lots of prepared framworks like Wordpress, Wix  are using PHP too. Even if you are not confident with it, you can still be productive as lots of parts of code on the web..."
+	
+</script>	
+	
+
+<script language="JavaScript" type="text/javascript">
+	
+function w3c_fun(){
+var f = document.getElementById("linkbox");
+f.style.width = '525px';
+document.getElementById("linkboxin").innerHTML=w3c;
+}
+
+function close_w3c_fun(){
+var x = document.getElementById("linkbox");
+x.style.width = '200px';
+}
+
+function javascript_fun(){
+var f = document.getElementById("linkbox");
+f.style.width = '525px';
+document.getElementById("linkboxin").innerHTML=javascript;
+}
+
+function close_javascript_fun(){
+var x = document.getElementById("linkbox");
+x.style.width = '200px';
+}
+
+function jquery_fun(){
+var f = document.getElementById("linkbox");
+f.style.width = '525px';
+document.getElementById("linkboxin").innerHTML=jquery;
+}
+
+function close_jquery_fun(){
+var x = document.getElementById("linkbox");
+x.style.width = '200px';
+}
+
+function github_fun(){
+var f = document.getElementById("linkbox");
+f.style.width = '525px';
+document.getElementById("linkboxin").innerHTML=git;
+}
+
+function close_github_fun(){
+var x = document.getElementById("linkbox");
+x.style.width = '200px';
+}
+
+function mysql_fun(){
+var f = document.getElementById("linkbox");
+f.style.width = '525px';
+document.getElementById("linkboxin").innerHTML=sql;
+}
+
+function close_sql_fun(){
+var x = document.getElementById("linkbox");
+x.style.width = '200px';
+}
+
+function rails_fun(){
+var f = document.getElementById("linkbox");
+f.style.width = '525px';
+document.getElementById("linkboxin").innerHTML=rails;
+}
+
+function close_rails_fun(){
+var x = document.getElementById("linkbox");
+x.style.width = '200px';
+}
+
+function asp_fun(){
+var f = document.getElementById("linkbox");
+f.style.width = '525px';
+document.getElementById("linkboxin").innerHTML=asp;
+}
+
+function close_asp_fun(){
+var x = document.getElementById("linkbox");
+x.style.width = '200px';
+}
+
+function php_fun(){
+var f = document.getElementById("linkbox");
+f.style.width = '525px';
+document.getElementById("linkboxin").innerHTML=php;
+}
+
+function close_php_fun(){
+var x = document.getElementById("linkbox");
+x.style.width = '200px';
+}
+
+</script>
+
+<script>
+	
+	$("#side_article_on_ulinks").css({"margin-top":"-1950px"});
+
+	$(document).ready(function(){
+		function elso(){
+			$("#side_article_on_ulinks").css({"margin-top":"-1275px"});
+	 }
+	
+	setTimeout(elso,650)
+	});
+		  
+</script>
+
+</body>

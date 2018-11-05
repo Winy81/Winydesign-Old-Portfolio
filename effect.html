@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('.panel-tab').on('click', function(event){
+	  event.preventDefault();
+	  $('.panel-stage').slideToggle(400, function(event){
+	    if($(this).is(':visible')){
+	      $('.panel-tab').html('Close <span>&#9650;</span>');
+          $('.panel-tab').css({"color":"red"}); 
+	    } else {
+	      $('.panel-tab').html('Open <span>&#9660;</span>');
+		  $('.panel-tab').css({"color":"green"});
+	    }
+		
+		
+		if ($(".panel-stage").is(':visible')){
+		  $('.panel-stage_bottom').animate({"opacity":1,"margin-top":"0px"},{diration:400,complete: function(){
+             $('.panel-stage_bottom2').animate({"opacity":1,"margin-top":"3px","margin-left":"30px"},600);}
+		  });
+		  
+		}
+		else{
+		  $('.panel-stage_bottom2').animate({"opacity":0,"margin-left":"-500px"},{duration:450,complete: function(){
+		     $('.panel-stage_bottom').animate({"opacity":0,"margin-top":"312px"},400);}
+		  });
+		}
+	  });
+	});
+});
+</script>
+</head>
+<body>
+<div id="main">
+<div class="panel">
+  <div class="panel-stage"><a href="">Hidden tag</a></br><a href="">Next line</a></br><a href="">Third line</a></div>
+  <a href="#" class="panel-tab">Open <span>&#9660;</span></a>
+<div class="bottom">
+  <div class="panel-stage_bottom">
+	  <a href="">Hidden tag</a></br><a href="">Next line</a></br><a href="">Third line</a></br><a href="">Fourth tag</a></br><a href="">Fifth line</a></br><a href="">Sixth line</a></br><a href="">Seventh</a>
+  </div>
+  <div class="panel-stage_bottom2">
+	  <a href="">Hidden tag</a></br><a href="">Next line</a></br><a href="">Third line</a></br><a href="">Fourth tag</a></br><a href="">Fifth line</a></br><a href="">Sixth line</a></br><a href="">Seventh</a>
+  </div>
+</div>
+</div>
+
+
+<style>
+	body {
+	  font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+	}
+	
+	a{
+	  text-decoration:none;
+	  color:black;
+	  -webkit-transition: color 0.2s;
+	    -moz-transition: color 0.2s;
+	    -o-transition: color 0.2s;
+	    transition: color 0.2s;	
+	}
+	
+	a:hover{
+	  color:red;
+	  -webkit-transition: color 0.2s;
+	    -moz-transition: color 0.2s;
+	    -o-transition: color 0.2s;
+	    transition: color 0.2s;	
+	}
+	
+	.panel {
+	  border-top: 2px solid lightgrey;
+	  width:300px;
+	  position:relative;
+	
+	}
+	
+	.panel-stage {
+	  border-radius: 0 0 6px 6px;
+	  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+	  display: none;
+	  height: 80px;
+	  margin: 0 auto;
+	  width: 80%;
+	  text-align:center;
+	  font-weight:600;
+	  z-index:100;
+	  
+	}
+	
+	
+	.bottom{
+		margin-top:-22px;
+		position:absolute;
+		width:300px;
+		
+	}
+	
+	.panel-stage_bottom {
+	  border-radius: 6px 6px 6px 6px;
+	  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+	  opacity:0;
+	  padding-top:20px;
+	  height:180px;
+	  margin:auto;
+	  margin-left:30px;
+	  width: 80%;
+	  text-align:center;
+	  font-weight:600;
+	  margin-top:312px;
+	  z-index:500;
+	}
+	
+	.panel-stage_bottom2 {
+	  border-radius: 6px 6px 6px 6px;
+	  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+	  opacity:0;
+	  padding-top:20px;
+	  height:180px;
+	  margin:auto;
+	  margin-left:-500px;
+	  width: 80%;
+	  text-align:center;
+	  font-weight:600;
+	  z-index:500;
+	}
+	
+	.panel-tab {
+	  background: linear-gradient(#fff, #f4f5f4);
+	  border: 1px solid #dedede;
+	  border-top:0;
+	  border-radius: 0 0 4px 4px;
+	  color: green;
+	  display: block;
+	  font-size: 11px;
+	  width:100px;
+	  margin-left:100px;
+	  text-align:center;
+	  position:relative;
+	  text-decoration:none;
+	  z-index:10;
+	
+</style>
+
+</body>
+</html>
